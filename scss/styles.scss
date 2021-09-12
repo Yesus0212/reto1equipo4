@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: black;
 }
 .container {
     width: 100%;
@@ -10,5 +12,41 @@
         justify-content: space-between;
         margin: 0 auto;
         padding: 1rem;
+    
+        .sidebar-right{
+            display: grid;
+           border: solid black;
+            border-radius: 5px; 
+            background: #d6d6d7;
+            margin-right: 15%;
+            .crayons-card{
+                display:inline-block;
+                box-sizing: border-box;
+                line-height: 24px;
+                background:#efefef;
+                color: black;
+                box-shadow: red;
+                padding: 16;
+                border-radius: 5px;
+                box-shadow: #d6d6d7;
+                margin-bottom: 20px;
+                z-index: auto;
+                
+                #img{ 
+                    box-sizing: content-box;
+                    vertical-align: middle;
+                }
+
+
+            }
+            .sidebar-additional{
+                margin-bottom: 20px; 
+
+            }
+        }
+
+
     }    
+
+
 }

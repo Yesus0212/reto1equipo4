@@ -1,5 +1,62 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container .content .sidebar-right {
+  display: -ms-grid;
+  display: grid;
+  border: solid black;
+  border-radius: 5px;
+  background: #d6d6d7;
+  margin-right: 15%;
+}
+
+.container .content .sidebar-right .crayons-card {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 24px;
+  background: #efefef;
+  color: black;
+  -webkit-box-shadow: red;
+          box-shadow: red;
+  padding: 16;
+  border-radius: 5px;
+  -webkit-box-shadow: #d6d6d7;
+          box-shadow: #d6d6d7;
+  margin-bottom: 20px;
+  z-index: auto;
+}
+
+.container .content .sidebar-right .crayons-card #img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.container .content .sidebar-right .sidebar-additional {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
