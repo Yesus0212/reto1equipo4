@@ -1,52 +1,112 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: black;
+$bgcolorgris:#d6d6d7;
+$colorgris: #808080;
+$fontcolormorado: #3b49df;
+$bgcolorHover: #efefef; 
+
+
+@mixin header-de-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    border-radius: 5px;
 }
-.container {
-    width: 100%;
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 1rem;
+@mixin padding-textos {
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    }
+@mixin hover-links {
+    color: $fontcolormorado;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        
+    }
     
-        .sidebar-right{
-            display: grid;
-           border: solid black;
-            border-radius: 5px; 
-            background: #d6d6d7;
-            margin-right: 15%;
-            .crayons-card{
-                display:inline-block;
-                box-sizing: border-box;
-                line-height: 24px;
-                background:#efefef;
-                color: black;
-                box-shadow: red;
-                padding: 16;
-                border-radius: 5px;
-                box-shadow: #d6d6d7;
-                margin-bottom: 20px;
-                z-index: auto;
-                
-                #img{ 
-                    box-sizing: content-box;
-                    vertical-align: middle;
+        .container {
+            width: 100%;
+            background-color: $bgcolorgris;
+            
+                .content {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 1rem;
+        
+                    .sidebar-right{
+                        display: grid;
+                        max-width: min-content;
+                        border: solid black;
+                        border-radius: 5px; 
+                        background: #d6d6d7;
+                        margin-right: 15%;
+                        flex-wrap: wrap;
+                        color: black;
+                        
+                        .crayons-card{
+                            display:inline-block;
+                            box-sizing: border-box;
+                            line-height: 24px;
+                            background:#efefef;
+                            color: black;
+                            @include padding-textos();
+                            margin-bottom: 10px;
+                            .morado{
+                                color: $fontcolormorado;
+                            }
+                            p{
+                                a{
+                                    color: $fontcolormorado;
+                                }                            
+                            }
+                        }
+                        .listings{
+                            margin-bottom: 10px;
+                        
+                            .listings-head{
+                                @include header-de-seccion();
+                                a{
+                                color: $fontcolormorado;
+                                }
+                            }
+                            
+                            .link-widget-b {
+                                    transition: .5;
+                                    color: black;
+                                    background-color: $colorgris;
+                                    &:hover  {
+                                        color: $fontcolormorado;
+                                    }
+                            .link-widget-b-contentful { 
+                                background-color: $colorgris;    
+                                &:hover {
+                                         background-color:$bgcolorHover ;
+                                    
+                                        }
+                             }
+                            div{
+                                .crayons-link_secondary {
+                                    color: $colorgris;
+                                           
+                                    }
+                                        
+                                 }
+                            } 
+                                
+                                                                                            
+                            
+                            
+                        }
+                    }
                 }
-
-
-            }
-            .sidebar-additional{
-                margin-bottom: 20px; 
-
-            }
-        }
-
-
-    }    
-
-
-}
+        }    
+        
