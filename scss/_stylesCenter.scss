@@ -10,6 +10,8 @@ $font-sans: 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Sego
     position: relative;
     width: 100%;    
     margin: 0 auto;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
 
     .content {
         @include displayFlexDirectionDinamic(flex,row wrap,space-between);
@@ -18,20 +20,12 @@ $font-sans: 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Sego
         padding: 1rem;
         box-sizing: border-box;
 
-        .sidebar-left {
-            box-sizing: border-box;
-            flex-wrap: wrap;
-            max-width: 240px;
-            border: 1px solid black;
-        //     background-color: white;
-        }
-        
         .items-center {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            width: 640.66px;
-            max-width: 640.66px;
+            width: 650.66px;
+            max-width: 650.66px;
             box-sizing: border-box;
             display: block;
             

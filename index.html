@@ -21,45 +21,276 @@
     <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/styles.css">
     <title>DEV Clone 👩‍💻👨‍💻</title>
 </head>
 <body>
-    <header>       
-        <div class="nav-bar">
-            <!-- <div>
-                <img src="/image/logo.png" alt="logo">               
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li>
-                        Log in
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>
-                                Create account
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div> -->
-       </div>
-    </header>
+    <!-- Mike -->
+    <header>
+      <nav class="navbar">
+        <div class="left-part">
+          <span class="open-slide">
+            <a href="#">
+              <svg width="20" height="24">
+                <path d="M0,5 30,5" stroke="#6c6c6c" stroke-width="2.5" />
+                <path d="M0,14 30,14" stroke="#6c6c6c" stroke-width="2.5" />
+                <path d="M0,23 30,23" stroke="#6c6c6c" stroke-width="2.5" />
+              </svg>
+            </a>
+          </span>
+          <img class="logo-img" src="./assets/image/favicon-96x96.png" alt="logo-img">
+        </div>
+        <div class="right-part">
+          <div class="search-box">
+            <input class="search-text" type="text" placeholder="Search...">
+            <a href="#" class="search-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="login">
+            <a href="#">Log In</a>
+          </div>
+          <div class="create-acc">
+            <a href="#">Create account</a>
+          </div>
+        </div>
+      </nav>
+    </header>  
     <div class="container">
         <div class="content">
             <div class="sidebar-left">
-                <aside>
-                    <h2>
-                        <a href="/">DEV Community</a> is a community of 691,587 amazing developers                    
-                    </h2>
-                </aside>
+          <aside class="aside-container">
+            <!-- Luis -->
+            <div class="left-container">
+              <div class="card1">
+              
+                <h2 class="p1"><a href="#">Dev Community</a> is a community of 696,157 amazing developers</h2>
+                <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+                <div class="account"><button>Create new account</button></div>
+                <div class="log"><button>Log in</button></div>
+  
+              </div>
+  
+              <nav class="nav1">
+                <h4>DEV Community</h4>
+                <div class="list-container">
+                  <ul>
+                    <li>
+                      <i class="fa fa-cloud"></i>
+                      <a href="#">
+                         Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Sign In
+                      </a>
+                    </li class="Sign">
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Listings
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Podcasts
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Videos
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Tags
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> FAQ
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> DEV Shop
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Sponsors
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> About
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div> 
+              </nav>
+  
+  
+              <nav class="nav2">
+                <h4>Other</h4>
+                <div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Code of Conduct
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Privacy policy
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-cloud"></i> Terms of use
+                      </a>
+                    </li>              
+                  </ul>
+                </div> 
+              </nav>
+  
+  
+              <div class="social_container">
+                <a href="twit">twit</a>
+                <a href="face">face</a>
+                <a href="git">git</a>
+                <a href="inst">int</a>
+                <a href="twitch">twitch</a>
+              </div>
+  
+  
+              <nav class="nav3">
+                <h4>Popular Tags</h4>
+                <div class="hashtags">
+                  <div>
+                    <a href="">#javascript</a>
+                  </div>
+                  <div>
+                    <a href="">#webdev</a>
+                  </div>
+                  <div>
+                    <a href="">#beginners</a>
+                  </div>
+                  <div>
+                    <a href="">#react</a>
+                  </div>
+                  <div>
+                    <a href="">#programming</a>
+                  </div>
+                  <div>
+                    <a href="">#tutorial</a>
+                  </div>
+                  <div>
+                    <a href="">#python</a>
+                  </div>
+                  <div>
+                    <a href="">#css</a>
+                  </div>
+                  <div>
+                    <a href="">#devops</a>
+                  </div>
+                  <div>
+                    <a href="">#productivity</a>
+                  </div>
+                  <div>
+                    <a href="">#codenewble</a>
+                  </div>
+                  <div>
+                    <a href="">#html</a>
+                  </div>
+                  <div>
+                    <a href="">#node</a>
+                  </div>
+                  <div>
+                    <a href="">#typescript</a>
+                  </div>
+                  <div>
+                    <a href="">#opensource</a>
+                  </div>
+                  <div>
+                    <a href="">#career</a>
+                  </div>
+                  <div>
+                    <a href="">#android</a>
+                  </div>
+                  <div>
+                    <a href="">#aws</a>
+                  </div>
+                  <div>
+                    <a href="">#discuss</a>
+                  </div>
+                  <div>
+                    <a href="">#java</a>
+                  </div>
+                  <div>
+                    <a href="">#angular</a>
+                  </div>
+                  <div>
+                    <a href="">#showdev</a>
+                  </div>
+                  <div>
+                    <a href="">#security</a>
+                  </div>
+                  <div>
+                    <a href="">#github</a>
+                  </div>
+                  <div>
+                    <a href="">#php</a>
+                  </div>
+                  <div>
+                    <a href="">#docker</a>
+                  </div>
+                  <div>
+                    <a href="">#testing</a>
+                  </div>
+                  <div>
+                    <a href="">#linux</a>
+                  </div>
+                  <div>
+                    <a href="">#machinelearning</a>
+                  </div>
+                  <div>
+                    <a href="">#database</a>
+                  </div>        
+                </div>
+              </nav>
+              <div class="shop">
+                <a href="#">
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--H03EII_F--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://thepracticaldev.s3.amazonaws.com/i/yulj7krmm6s7owlk3l7d.jpg" style="margin-top:15px;" loading="lazy">
+                  <h2>New Champion-Brand DEV Wear is Here!</h2>
+                </a>
+              </div>
             </div>
-            <main class="items-center">
-                <div class="header-center">
-                    <h1>
-                        Posts
+          </aside>
+        </div>
+		<main class="items-center">
+            <div class="header-center">
+                <h1>
+                    Posts
                     </h1>                        
                     <nav class="nav-center-links">
                         <ul>
@@ -285,21 +516,144 @@
                     </div>
                 </div>
             </main>
-            <div class="sidebar-right">
-                <aside>
-                    <p>
-                        <a href="https://forem.dev/enter">
-                            <img style="margin-bottom: 15px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--SHlJgkk0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/a3ojuveqrskiei1m6x6x.png" 
-                            alt="Smiley Icon">
-                        </a>                       
-                    </p>
-                </aside>
-            </div>
-        </div>    
-    </div>    
-    <footer>
-        <!-- Mike -->
-        <div class="footer-container"></div>
+        <div class="sidebar-right">
+          <div class="crayons-card">
+            <p id="img">
+              <a href="https://forem.dev/enter">
+                <img style="margin-bottom: 15px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--SHlJgkk0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/a3ojuveqrskiei1m6x6x.png" alt="Smiley Icon" loading="lazy" width="auto"  height="auto">
+              </a>
+            </p>
+            <p>
+              <strong class="morado">
+                <a href="https://forem.dev">Forem.dev</a>
+              </strong>
+                is a community dedicated to discussing and discovering the open source community software that powers DEV.
+            </p>
+            <p>
+              <a href="https://forem.dev/enter">→ Join</a>
+            </p>
+          </div>
+          <aside id="sidebar-additional" class="crayons-card-b">
+            <section class="listings">
+              <header class="listings-head">
+                <h3>Listings</h3>
+                <div class="header-listings-actions">
+                  <a href="/listings">See all</a>
+                </div>
+              </header>
+              <div>
+                <a class="link-widget-b link-widget-b-contentful" href="/listings/collabs/codeoz-s-letters-3alb">
+                  <div>📬 CodeOz's Letters ! 💻</div>
+                  <div class="crayons-link__secondary">collabs</div>
+                </a>
+                <a class="link-widget-b link-widget-b-contentful" href="/listings/mentors/learn-css-and-become-a-better-developer-for-only-8-month-65o">
+                  <div>Learn CSS and become a better developer for only 8€/month</div>
+                  <div class="crayons-link__secondary">mentors</div>
+                </a>
+                <a class="link-widget-b link-widget-b-contentful" href="/listings/education/practice-and-solve-programming-challenges-14nk">
+                  <div>Practice and solve programming challenges</div>
+                  <div class="crayons-link__secondary ">education</div>
+                </a>
+                <a class="link-widget-b link-widget-b-contentful" href="/listings/education/discover-how-javascript-frameworks-work-behind-the-scenes-2fjm">
+                  <div>Discover How JavaScript Frameworks Work Behind the Scenes</div>
+                  <div class="crayons-link__secondary">education</div>
+                </a>
+                <a class="link-widget-b link-widget-b-contentful" href="/listings/education/become-a-pro-developer-free-e-book-3kme">
+                  <div>Become A Pro Developer - Free E-Book</div>
+                  <div class="crayons-link__secondary">education</div>
+                </a>
+                <a class="crayons-link crayons-link--branded block align-center p-3 fw-medium fs-s w-100" href="/listings/new">Create a Listing</a>    
+              </div>
+            </section>
+            <section class="news">
+              <header class="crayons-card__header">
+                <h3 class="crayons-subtitle-2"><a href="/t/news" class="crayons-link">#news</a></h3>
+              </header>
+              <div>
+                <a class="link-widget-b" href="/mvolpato/this-week-in-flutter-20-225j">
+                  This week in Flutter #20
+                  <div class="crayons-link__secondary">
+                    <span class="crayons-indicator crayons-indicator--accent">New</span>
+                  </div>
+                </a>
+                <a class="crayons-link crayons-link--contentful" href="/gamedevdigest/game-dev-digest-issue-109-tools-to-improve-4h5">
+                  Game Dev Digest — Issue #109 - Tools To Improve
+                  <div class="crayons-link__secondary">
+                    <span class="crayons-indicator crayons-indicator--accent">New</span>
+                  </div>
+                </a>
+                <a class="crayons-link crayons-link--contentful" href="/xnbox/deepfakehttp-v1-0-6-released-39n7">
+                  DeepfakeHTTP v1.0.6 released
+                  <div class="crayons-link__secondary">
+                    2 comments
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="widget">
+              <header>
+                <h4>recently queried</h4>
+              </header>
+              <div class="widget-body">
+                <a class="link-widget-b" href="#">gRPC vs REST</a>
+                <a class="link-widget-b" href="#">React Chrome Extension</a>
+                <a class="link-widget-b" href="#">Youtube-DI Gui</a>
+                <a class="link-widget-b" href="#">Free SVG Icons</a>
+                <a class="link-widget-b" href="#">Windows 10 vs Linux</a>
+                <a class="link-widget-b" href="#">Ximertracks</a>
+                <a class="link-widget-b" href="#">Freenom Domain</a>
+                <a class="link-widget-b" href="#">ReactJS setState</a>
+                <a class="link-widget-b" href="#">useReducer TypeScript</a>
+                <a class="link-widget-b" href="#">Sublime Text vs Vscode</a>
+                <a class="link-widget-b" href="#">Method vs Function</a>
+                <a class="link-widget-b" href="#">React Hooks Componentdidmount</a>
+                <a class="link-widget-b" href="#">HandWriting Generator</a>
+                <a class="link-widget-b" href="#">Haiku Checker</a>
+                <a class="link-widget-b" href="#">Vscode Vim</a>
+                <a class="link-widget-b" href="#">&Nbsp Meaning</a>
+                <a class="link-widget-b" href="#">Exit Vim</a>
+                <a class="link-widget-b" href="#">Value Spring</a>
+                <a class="link-widget-b" href="#">Windows terminal Customization</a>
+                <a class="link-widget-b" href="#">JavaScript Playground</a>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <!-- Mike -->
+    <footer class="footer-bg">
+      <div class="footer-container">
+        <p class="footer-description">
+          <a href="#">
+            DEV Community
+          </a>
+          – A constructive and inclusive social network for 
+          software developers. With you every step of your 
+          journey.
+        </p>
+        <div class="footer-description">
+          <p>
+            Built on
+            <a href="#">Forem</a>
+            — the
+            <a href="#">open source</a>
+            software that powers
+            <a href="#">DEV</a>
+            and other inclusive communities.
+          </p>
+          <p>Made with love and
+            <a href="#">Ruby on Rails</a>
+            . DEV Community
+            <span title="copyright">©</span>
+            2016 - 2021
+          </p>
+        </div>
+        <div class="img-for-footer">
+          <img src="./assets/image/ss-forSvg-footer.png" alt="img-for-footer">
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="https://kit.fontawesome.com/452449b734.js" crossorigin="anonymous"></script>
+  </body>
 </html>
