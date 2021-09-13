@@ -14,6 +14,11 @@ body {
           flex-direction: column;
 }
 
+body a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +186,134 @@ body {
 .container .content .items-center .nav-center-links ul li .btn:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+.container .content .items-center .principal-card {
+  margin: 0 0 .75rem;
+  max-width: 100%;
+  max-height: 100%;
+  background: #fff;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 0 0 1px rgba(9, 9, 9, 0.1);
+          box-shadow: 0 0 0 1px rgba(9, 9, 9, 0.1);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .principal-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story {
+  max-width: 100%;
+  max-height: 100%;
+  background: #fff;
+  padding: 1rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top {
+  color: #090909;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-pic {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-pic .avatar {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  border-radius: 100%;
+  position: relative;
+  background-color: #717171;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-pic .avatar .avatar-image {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-data div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-data div .nickname {
+  font-weight: 500;
+  color: #575757;
+  line-height: 1.25;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  margin-left: -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .author-data div .date {
+  color: #717171;
+  line-height: 1.25;
+  font-size: 0.75rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story {
+  padding-left: 40px;
+  font-size: 1.875rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story .title {
+  margin-bottom: 0.5rem;
+  color: #090909;
+  line-height: 1.25;
+  font-size: 1.875rem;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story .title a {
+  color: inherit;
+  display: block;
 }
 
 .container .content .sidebar-right {

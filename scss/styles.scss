@@ -1,14 +1,252 @@
-* {
-	margin: 0;
-	padding: 0;
+$font-sans: 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@mixin displayFlexDirectionDinamic ($display, $flow, $justify) {
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
 }
+
+body {
+    background: #efefef;
+    margin: 0;
+    padding: 0;
+    color: #090909;
+    font-family: $font-sans;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.nav-bar {    
+    @include displayFlexDirectionDinamic(flex,row nowrap,space-between);
+    width: 100%;
+    position: sticky;
+    background: white;
+    max-height: 52px;
+    img {
+        width: 40px;
+    }
+}
+
 .container {
-	width: 100%;
-	.content {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin: 0 auto;
-		padding: 1rem;
-	}
+    position: relative;
+    width: 100%;    
+    margin: 0 auto;
+    .content {
+        @include displayFlexDirectionDinamic(flex,row wrap,space-between);
+        width: 1280px;
+        margin: 0 311px;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        .sidebar-left {
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            max-width: 240px;
+            border: 1px solid black;
+        //     background-color: white;
+        }
+        
+        .items-center {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 640.66px;
+            max-width: 640.66px;
+            box-sizing: border-box;
+            display: block;
+            
+            .header-center{
+                @include displayFlexDirectionDinamic(flex,row nowrap,space-between);
+                align-items: center;
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                width: 100%;
+                height: 40px;
+                max-height: 40px;
+
+                h1 {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: #242424;
+                    margin: 0;
+                }
+            }
+
+            .nav-center-links {
+                display: flex;
+                padding: 0.5rem;                
+                ul {
+                    @include displayFlexDirectionDinamic(flex,row nowrap,space-around);
+                    text-decoration: none;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        margin:0; 
+                        display: flex;                       
+                        flex-direction: column;
+                        justify-content: center;
+                        .btn {
+                            border-radius: 3px;
+                            color: #090909;
+                            font-weight: 500;
+                            text-decoration: none;
+                            margin: 0 0.25rem;
+                            display: inline-flex;
+                            padding: 0.5rem 0.5rem;
+                            cursor: pointer;   
+                            border-bottom: 3px solid #3b49df;
+                            transition: transform 300ms ease;
+                            &.btn-primary {
+                                background-color: lighten(#3b49df, 10%);                                
+                            }
+                            &.btn-secondary {
+                                background-color: lighten(#3b49df, 20%);
+                            }
+                            &:hover {
+                                transform: scale(.95);
+                            }                                                                                 
+                        }                   
+                                              
+                        
+                    }
+                }
+            }
+
+            .principal-card {
+                margin: 0 0 .75rem;
+                max-width: 100%;
+                max-height: 100%;
+                background: #fff;
+                font-size: 1rem;
+                box-shadow: 0 0 0 1px rgba(9,9,9,0.1);            
+                border-radius: 5px;
+                box-sizing: border-box;
+
+                .principal-image {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 5px 5px 0 0;
+                    box-sizing: border-box;
+                }
+
+                .card-story {
+                    max-width: 100%;
+                    max-height: 100%;
+                    background: #fff;
+                    padding: 1rem;
+
+                    .card-top {
+                        color: #090909;
+                        margin-bottom: 0.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        box-sizing: border-box;
+
+                        .min-profile {
+                            display: flex;
+                            align-items: center;                            
+                            line-height: 1.25rem;
+                            font-size: 0.875rem;
+                            box-sizing: border-box;
+
+                            .author-pic {
+                                position: relative;
+                                margin-right: 0.5rem;
+
+                                .avatar {
+                                    width: 2rem;
+                                    height: 2rem;
+                                    display: inline-block;
+                                    border-radius: 100%;
+                                    position: relative;
+                                    background-color: #717171;
+
+                                    .avatar-image {
+                                        border-radius: 100%;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: inline-block;
+                                        vertical-align: bottom;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .author-data {
+                                
+                                div {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .nickname {
+                                        font-weight: 500;
+                                        color: #575757;
+                                        line-height: 1.25;
+                                        font-size: 0.875rem;
+                                        padding: 0.25rem;
+                                        margin-left: -0.25rem;
+                                        margin-bottom: 0.5rem;
+                                    }
+
+                                    .date {
+                                        color: #717171;
+                                        line-height: 1.25;
+                                        font-size: 0.75rem;
+                                    }
+                                }
+                            }
+
+                            .min-story {                                
+                                padding-left: 40px; //Suma de variable 1 (2rem) y variable 2 (.5rem)
+                                font-size: 1.875rem;
+
+                                .title {
+                                    margin-bottom: 0.5rem;
+                                    color: #090909;
+                                    line-height: 1.25;
+                                    font-size: 1.875rem;
+                                    font-weight: bold;
+                                    overflow-wrap: anywhere; // Sirve para romper una cadena dentro de una URL, para que no se desborde
+                                    word-break: break-word; // Tiene la misma función que el overflow-wrap
+                                    
+                                    a {
+                                        color: inherit;
+                                        display: block;
+                                    }
+                                }
+                            }
+
+
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+        .sidebar-right{
+        //     box-sizing: border-box;
+        //     flex-wrap: wrap;
+            width: 325.328;
+        //     border: 1px solid black;
+        //     background-color: white;
+            img {
+                 width: 80%;
+             }
+        }
+
+    }    
 }
