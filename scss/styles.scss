@@ -1,3 +1,7 @@
+$width : 1012.44px;
+$max-w : 300px;
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,5 +20,140 @@
 
 //Left Aside (By Luis Rocha)
 
+.sidebar-left{
 
+	.left-container{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100px;
+		justify-content: space-between;
+		align-items: initial;
+		margin: 0 auto;
+		padding: 1rem;
+		max-width: 300px;
+		min-width: 50px;
+		.list-container{
+			display: flex;
+			
+		
+			
 
+		}
+		li{
+			display: flex;
+		}
+		
+	}
+	.card1{
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		
+		
+		flex-basis: 200px;
+		position: relative;
+		height: auto;
+		border: none;
+		z-index: 1;
+		text-decoration: none;
+		a{
+			text-decoration: none;
+		}
+		.account{
+			position: relative;
+			display: inline-block;
+			outline: none;
+			font-family: inherit;
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+
+			overflow-wrap: normal;
+			border: transparent;
+			background-color: rgb(59, 73, 223);
+			border-bottom-color: rgba(0, 0, 0, 0);
+			border-bottom-left-radius : 5px;
+			transition-delay: 0s;
+			transition-duration: 0.1s;
+			transition-property :all;
+			transition-timing-function:cubic-bezier(0.17, 0.67, 0.5, 0.71);
+			visibility: visible;
+			width: 208px;
+		}
+	}
+	.nav1{
+		position: relative;
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		
+		border: none;
+		
+		z-index: 1;
+		ul{
+			display:flex;
+			flex-direction: column;
+			li{
+				position: relative;
+				align-items: center;
+				a{
+					align-items: initial;
+				}
+				i{
+					position: relative;
+					align-items: center;
+				}
+			}
+		}
+		
+	}
+
+	.nav2{
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		position: relative;
+		height: auto;
+		border: none;
+		text-decoration: none;
+		z-index: 1;
+	}
+
+	.nav3{
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		box-shadow: 0 0 0 0;
+		position: relative;
+		height: auto;
+		border: none;
+		text-decoration: none;
+		z-index: 1;
+		overflow-y: scroll;
+		max-height: 42vh;
+		a{
+			text-decoration: none;
+		}
+	}
+
+	.social_container{
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		box-shadow: 0 0 0 1px;
+		position: relative;
+		height: auto;
+		border: none;
+		z-index: 1;
+	}
+
+	.shop{
+		background: #f9f9f9;
+		color: rgb(8, 8, 8);
+		position: relative;
+		border: none;
+		z-index: 1;
+			img{
+				max-width: 200px;
+			}
+		
+		a{
+			text-decoration: none;
+		}
+	}
+}
