@@ -27,28 +27,24 @@
   align-items: center;
   text-align: center;
 }
-
-.left-part {
+.navbar .left-part {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-
-.open-slide {
+.navbar .left-part .open-slide {
   margin: 0 1rem;
 }
-
-.logo-img {
+.navbar .left-part .logo-img {
   width: 50px;
   height: 45px;
   margin: 0 10px;
   border: none;
   border-radius: 3.5px;
 }
-
-.right-part {
+.navbar .right-part {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

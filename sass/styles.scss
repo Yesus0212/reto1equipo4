@@ -26,32 +26,29 @@
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-}
+	.left-part {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		.open-slide {
+			margin: 0 1rem;
+		}
 
-.left-part {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-}
-
-.open-slide {
-	margin: 0 1rem;
-}
-
-.logo-img {
-	width: 50px;
-	height: 45px;
-	margin: 0 10px;
-	border: none;
-	border-radius: 3.5px;
-}
-
-.right-part {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+		.logo-img {
+			width: 50px;
+			height: 45px;
+			margin: 0 10px;
+			border: none;
+			border-radius: 3.5px;
+		}
+	}
+	.right-part {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .search-box {
