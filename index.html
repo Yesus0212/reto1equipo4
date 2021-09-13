@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit=cover><!-- viweport-fit=cover, se utiliza para expandir todo el sitio en la pantalla, etiqueta para iPhone X -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit=cover>
+    <!-- viweport-fit=cover, se utiliza para expandir todo el sitio en la pantalla, etiqueta para iPhone X -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
@@ -27,19 +28,36 @@
   </head>
 
   <body>
-    <header>
-      <nav class="nav-bar">
-        <div class="sidebar-content">
-					<div class="logo">
-						<div class="logo-name">
-							DEV Community
-						</div>
-					</div>
-				</div>
-      <div class="nav-bar">
-        <!-- Mike -->
-			</nav>
-    </header>
+    <!-- Mike -->
+    <nav class="navbar">
+      <div class="left-part">
+        <span class="open-slide">
+          <a href="#">
+            <svg width="20" height="24">
+              <path d="M0,5 30,5" stroke="#6c6c6c" stroke-width="2.5" />
+              <path d="M0,14 30,14" stroke="#6c6c6c" stroke-width="2.5" />
+              <path d="M0,23 30,23" stroke="#6c6c6c" stroke-width="2.5" />
+            </svg>
+          </a>
+        </span>
+        <img class="logo-img" src="./assets/image/favicon-96x96.png" alt="logo-img">
+      </div>
+      <div class="right-part">
+        <div class="search-box">
+          <input class="search-text" type="text" placeholder="Search...">
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+        <div class="create-acc">
+          <a href="#">Create account</a>
+        </div>
+      </div>
+    
+    </nav>
     <div class="container">
       <div class="content">
         <div class="sidebar-left">
@@ -61,6 +79,8 @@
       <!-- Mike -->
       <div class="footer-container"></div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/452449b734.js" crossorigin="anonymous"></script>
   </body>
 
 </html>
