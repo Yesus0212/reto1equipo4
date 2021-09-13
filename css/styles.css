@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: #efefef;
+}
+
 .container {
   width: 100%;
 }
@@ -122,10 +126,15 @@
 .create-acc a {
   background: #3b49df;
   color: #fff;
-  padding: 1rem 0.75rem;
+  padding: 0.75rem 1rem;
   border: transparent;
-  border-radius: 5px;
-  margin: 16px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 0.875rem;
+}
+
+footer {
+  background: #d6d6d7;
 }
 
 @media only screen and (min-width: 600px) {
