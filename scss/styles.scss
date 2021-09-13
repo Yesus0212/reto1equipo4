@@ -1,5 +1,125 @@
 $width : 1012.44px;
 $max-w : 300px;
+$bgcolorgris:#d6d6d7;
+$colorgris: #808080;
+$fontcolormorado: #3b49df;
+$bgcolorHover: #efefef; 
+
+@mixin header-de-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+@mixin padding-textos {
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+@mixin hover-links {	
+    color: $fontcolormorado;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+        
+}
+    
+.container {
+    width: 100%;
+    background-color: $bgcolorgris;
+            
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        
+        .sidebar-right{
+            display: grid;
+            max-width: min-content;
+            border: solid black;
+            border-radius: 5px; 
+            background: $bgcolorHover;
+            margin-right: 15%;
+            flex-wrap: wrap;
+            color: black;
+                        
+            .crayons-card{
+                display:inline-block;
+                box-sizing: border-box;
+                line-height: 24px;
+                background:$bgcolorHover;
+                color: black;
+                @include padding-textos();
+                margin-bottom: 10px;
+                                
+				.morado{
+                    color: $fontcolormorado;
+                }
+				
+				p{
+					a{
+						color: $fontcolormorado;
+					}           
+				}
+			}
+			
+			.crayons-card-b{
+				@include padding-textos();
+				
+				.listings{
+					margin-bottom: 10px;
+					
+					.listings-head{
+						@include header-de-seccion();
+						
+						a{
+							color: $fontcolormorado;
+						}
+					}
+					
+					.link-widget-b {
+						transition: .5 ease;
+						color: black;
+						background-color: $colorgris;						
+						&:hover  {
+							color: $fontcolormorado;
+						}
+					}
+					
+					.link-widget-b-contentful { 						
+						background-color: $colorgris;
+						transition: .5 ease;    						
+						&:hover {
+							background-color:$bgcolorHover ;
+						}
+					}
+					
+					.crayons-link_secondary{
+						color: $colorgris;
+					}
+				} 
+				
+				.news{
+					color: black;
+				}
+			}
+		}
+    }
+}    
+        
+// General
 
 * {
 	margin: 0;
@@ -41,9 +161,6 @@ body {
 		.list-container{
 			display: flex;
 			
-		
-			
-
 		}
 		li{
 			display: flex;
@@ -52,18 +169,18 @@ body {
 	}
 	.card1{
 		background: #f9f9f9;
-		color: rgb(8, 8, 8);
-		
-		
+		color: rgb(8, 8, 8);		
 		flex-basis: 200px;
 		position: relative;
 		height: auto;
 		border: none;
 		z-index: 1;
 		text-decoration: none;
+
 		a{
 			text-decoration: none;
 		}
+
 		.account{
 			position: relative;
 			display: inline-block;
@@ -72,7 +189,6 @@ body {
 			text-align: center;
 			text-decoration: none;
 			cursor: pointer;
-
 			overflow-wrap: normal;
 			border: transparent;
 			background-color: rgb(59, 73, 223);
@@ -86,23 +202,26 @@ body {
 			width: 208px;
 		}
 	}
+
 	.nav1{
 		position: relative;
 		background: #f9f9f9;
-		color: rgb(8, 8, 8);
-		
-		border: none;
-		
+		color: rgb(8, 8, 8);		
+		border: none;		
 		z-index: 1;
+
 		ul{
 			display:flex;
 			flex-direction: column;
+
 			li{
 				position: relative;
 				align-items: center;
+				
 				a{
 					align-items: initial;
 				}
+
 				i{
 					position: relative;
 					align-items: center;
@@ -133,6 +252,7 @@ body {
 		z-index: 1;
 		overflow-y: scroll;
 		max-height: 42vh;
+
 		a{
 			text-decoration: none;
 		}
@@ -154,11 +274,12 @@ body {
 		position: relative;
 		border: none;
 		z-index: 1;
-			img{
-				max-width: 200px;
-			}
+
+		img {
+			max-width: 200px;
+		}
 		
-		a{
+		a {
 			text-decoration: none;
 		}
 	}
@@ -173,12 +294,14 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+
 	.left-part {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
+
 		.open-slide {
 			margin: 0 1rem;
 		}
@@ -191,6 +314,7 @@ body {
 			border-radius: 3.5px;
 		}
 	}
+
 	.right-part {
 		display: flex;
 		flex-direction: row;
@@ -275,7 +399,6 @@ body {
 	border-radius: 4px;
 	margin: 0 10px;
 	font-size: 0.875rem;
-
 }
 
 footer .footer-bg{
