@@ -215,6 +215,8 @@ body a {
   max-height: 100%;
   background: #fff;
   padding: 1rem;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 5px;
 }
 
 .container .content .items-center .principal-card .card-story .card-top {
@@ -245,6 +247,7 @@ body a {
   font-size: 0.875rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 0.5rem;
 }
 
 .container .content .items-center .principal-card .card-story .card-top .min-profile .author-pic {
@@ -296,12 +299,12 @@ body a {
   font-size: 0.75rem;
 }
 
-.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story {
+.container .content .items-center .principal-card .card-story .card-top .min-story {
   padding-left: 40px;
   font-size: 1.875rem;
 }
 
-.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story .title {
+.container .content .items-center .principal-card .card-story .card-top .min-story .title {
   margin-bottom: 0.5rem;
   color: #090909;
   line-height: 1.25;
@@ -309,11 +312,132 @@ body a {
   font-weight: bold;
   overflow-wrap: anywhere;
   word-break: break-word;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.container .content .items-center .principal-card .card-story .card-top .min-profile .min-story .title a {
+.container .content .items-center .principal-card .card-story .card-top .min-story .title a {
   color: inherit;
   display: block;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-tags {
+  margin-bottom: 0.5rem;
+  margin-left: -0.25rem;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-tags .tag {
+  font-size: 0.875rem;
+  color: #717171;
+  line-height: 1.3;
+  border-radius: 5px;
+  padding: 0.25rem;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-tags .tag .prefix {
+  opacity: 0.4;
+  font-weight: normal;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-btn {
+  padding-left: 0.5rem;
+  font-weight: normal;
+  border-width: 0px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border: 0px solid;
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #3d3d3d;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-btn .icon {
+  vertical-align: bottom;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-btn .s:inline {
+  display: inline;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-save .save-time {
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  color: #717171;
+}
+
+.container .content .items-center .principal-card .card-story .card-top .min-story .story-bottom .story-details .story-save .save-btn {
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #d6d6d7;
+  border-color: transparent;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  color: #3d3d3d;
 }
 
 .container .content .sidebar-right {

@@ -143,6 +143,8 @@ body {
                     max-height: 100%;
                     background: #fff;
                     padding: 1rem;
+                    border-radius: 5px 5px 5px 5px;
+                    margin-bottom: 5px;
 
                     .card-top {
                         color: #090909;
@@ -158,6 +160,7 @@ body {
                             line-height: 1.25rem;
                             font-size: 0.875rem;
                             box-sizing: border-box;
+                            margin-bottom: 0.5rem;
 
                             .author-pic {
                                 position: relative;
@@ -205,29 +208,130 @@ body {
                                     }
                                 }
                             }
+                        }
 
-                            .min-story {                                
-                                padding-left: 40px; //Suma de variable 1 (2rem) y variable 2 (.5rem)
+                        .min-story {                                
+                            padding-left: 40px; //Suma de variable 1 (2rem) y variable 2 (.5rem)
+                            font-size: 1.875rem;
+
+                            .title {
+                                margin-bottom: 0.5rem;
+                                color: #090909;
+                                line-height: 1.25;
                                 font-size: 1.875rem;
+                                font-weight: bold;
+                                overflow-wrap: anywhere; // Sirve para romper una cadena dentro de una URL, para que no se desborde
+                                word-break: break-word; // Tiene la misma función que el overflow-wrap
+                                box-sizing: border-box;
 
-                                .title {
-                                    margin-bottom: 0.5rem;
-                                    color: #090909;
-                                    line-height: 1.25;
-                                    font-size: 1.875rem;
-                                    font-weight: bold;
-                                    overflow-wrap: anywhere; // Sirve para romper una cadena dentro de una URL, para que no se desborde
-                                    word-break: break-word; // Tiene la misma función que el overflow-wrap
-                                    
-                                    a {
-                                        color: inherit;
-                                        display: block;
-                                    }
-                                }
+                                a {
+                                    color: inherit;
+                                    display: block;
+                                }                                
                             }
 
+                            .story-tags {
+                                margin-bottom: 0.5rem;
+                                margin-left: -0.25rem;
+                                
+                                .tag {
+                                    font-size: 0.875rem;
+                                    color: #717171;
+                                    line-height: 1.3;
+                                    border-radius: 5px;
+                                    padding: 0.25rem;
+                                    display: inline-block;
+                                    box-sizing: border-box;
+
+                                    .prefix {
+                                        opacity: 0.4;
+                                        font-weight: normal;
+                                    }
+                                }
+
+                            }
+
+                            .story-bottom {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-size: 0.875rem;
+                                line-height: 1.25;
+                                box-sizing: border-box;
+
+                                .story-details {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    margin-left: -0.5rem;
+                                    box-sizing: border-box;
+
+                                    .story-btn {
+                                        padding-left: 0.5rem;
+                                        font-weight: normal;
+                                        border-width: 0px;
+                                        position: relative;
+                                        display: inline-block;
+                                        padding: 0.25rem 0.75rem;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        font-family: inherit;
+                                        font-size: 0.875rem;
+                                        line-height: 1.5rem;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        border: 0px solid;
+                                        background-color: transparent;
+                                        border-color: transparent;
+                                        box-shadow: none;
+                                        color: #3d3d3d;
+
+                                        .icon {
+                                            vertical-align: bottom;                                            
+                                        }
+
+                                        .s:inline {
+                                            display: inline;
+                                        }
+                                    }
+
+                                    .story-save {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .save-time {
+                                            font-size: 0.75rem;
+                                            margin-right: 0.5rem;
+                                            color: #717171;
+                                        }
+
+                                        .save-btn {
+                                            font-weight: normal;
+                                            position: relative;
+                                            display: inline-block;
+                                            padding: 0.5rem 0.75rem;
+                                            margin: 0.25rem;
+                                            border-radius: 5px;
+                                            outline: none;
+                                            font-family: inherit;
+                                            font-size: 0.875rem;
+                                            line-height: 1.5rem;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            cursor: pointer;
+                                            //border: 0px solid;
+                                            background-color: #d6d6d7;
+                                            border-color: transparent;
+                                            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+                                            color: #3d3d3d;
+                                        }
+                                        
+                                    }
+                                }
 
 
+
+                            }
                         }
                     }
                 }
