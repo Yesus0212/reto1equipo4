@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit=cover><!-- viweport-fit=cover, se utiliza para expandir todo el sitio en la pantalla, etiqueta para iPhone X -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit=cover>
+    <!-- viweport-fit=cover, se utiliza para expandir todo el sitio en la pantalla, etiqueta para iPhone X -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
@@ -18,21 +19,53 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/icons/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./scss/styles.scss">
     <link rel="stylesheet" href="css/styles.css">
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
+>>>>>>> @{-1}
     <title>DEV Clone 👩‍💻👨‍💻</title>
   </head>
 
   <body>
-    <header>
-      <div class="nav-bar">
-        <!-- Mike -->
+    <!-- Mike -->
+    <nav class="navbar">
+      <div class="left-part">
+        <span class="open-slide">
+          <a href="#">
+            <svg width="20" height="24">
+              <path d="M0,5 30,5" stroke="#6c6c6c" stroke-width="2.5" />
+              <path d="M0,14 30,14" stroke="#6c6c6c" stroke-width="2.5" />
+              <path d="M0,23 30,23" stroke="#6c6c6c" stroke-width="2.5" />
+            </svg>
+          </a>
+        </span>
+        <img class="logo-img" src="./assets/image/favicon-96x96.png" alt="logo-img">
       </div>
-    </header>
+      <div class="right-part">
+        <div class="search-box">
+          <input class="search-text" type="text" placeholder="Search...">
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div class="login">
+          <a href="#">Log In</a>
+        </div>
+        <div class="create-acc">
+          <a href="#">Create account</a>
+        </div>
+      </div>
+
+    </nav>
     <div class="container">
       <div class="content">
         <div class="sidebar-left">
@@ -282,10 +315,41 @@
         </div>
       </div>
     </div>
-    <footer>
-      <!-- Mike -->
-      <div class="footer-container"></div>
+    <!-- Mike -->
+    <footer class="footer-bg">
+      <div class="footer-container">
+        <p class="footer-description">
+          <a href="#">
+            DEV Community
+          </a>
+          – A constructive and inclusive social network for 
+          software developers. With you every step of your 
+          journey.
+        </p>
+        <div class="footer-description">
+          <p>
+            Built on
+            <a href="#">Forem</a>
+            — the
+            <a href="#">open source</a>
+            software that powers
+            <a href="#">DEV</a>
+            and other inclusive communities.
+          </p>
+          <p>Made with love and
+            <a href="#">Ruby on Rails</a>
+            . DEV Community
+            <span title="copyright">©</span>
+            2016 - 2021
+          </p>
+        </div>
+        <div class="img-for-footer">
+          <img src="./assets/image/ss-forSvg-footer.png" alt="img-for-footer">
+        </div>
+      </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/452449b734.js" crossorigin="anonymous"></script>
   </body>
 
 </html>
