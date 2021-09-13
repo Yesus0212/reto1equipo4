@@ -133,6 +133,124 @@ body {
   font-size: 0.875rem;
 }
 
+.container {
+  width: 100%;
+  background-color: #d6d6d7;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+.container .content .sidebar-right {
+  display: -ms-grid;
+  display: grid;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  
+  border-radius: 5px;
+  background: #efefef;
+  margin-right: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: black;
+}
+
+.container .content .sidebar-right .crayons-card {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 24px;
+  background: #efefef;
+  color: black;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.container .content .sidebar-right .crayons-card .morado {
+  color: #3b49df;
+}
+
+.container .content .sidebar-right .crayons-card p a {
+  color: #3b49df;
+}
+
+.container .content .sidebar-right .crayons-card-b {
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings {
+  margin-bottom: 10px;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .listings-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .listings-head a {
+  color: #3b49df;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .link-widget-b {
+  -webkit-transition: .5 ease;
+  transition: .5 ease;
+  color: black;
+  background-color: #808080;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .link-widget-b:hover {
+  color: #3b49df;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .link-widget-b-contentful {
+  background-color: #808080;
+  -webkit-transition: .5 ease;
+  transition: .5 ease;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .link-widget-b-contentful:hover {
+  background-color: #efefef;
+}
+
+.container .content .sidebar-right .crayons-card-b .listings .crayons-link_secondary {
+  color: #808080;
+}
+
+.container .content .sidebar-right .crayons-card-b .news {
+  color: black;
+}
 footer .footer-bg {
   background: #d6d6d7;
 }

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+    .container {
+        width: 100%;
+        background-color: $bgcolorgris;
+        
+            .content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 0 auto;
+                padding: 1rem;
+    
+                .sidebar-right{
+                    display: grid;
+                    max-width: 16% ;
+                    border: solid black;
+                    border-radius: 5px; 
+                    background: #d6d6d7;
+                    margin-right: 15%;
+                    
+                    .crayons-card{
+                        display:inline-block;
+                        box-sizing: border-box;
+                        line-height: 24px;
+                        background:#0000;
+                        color: black;
+                        @include padding-textos();
+
+                        
+                        
+
+                
+                    }
+                }
+            }   
+    }
